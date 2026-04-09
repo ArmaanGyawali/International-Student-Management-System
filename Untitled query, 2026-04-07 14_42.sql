@@ -63,7 +63,6 @@ CREATE TABLE visa_status(
     FOREIGN KEY (student_id) REFERENCES students(student_id) 
 );
 select * from visa_status;
-#inserting values inside table visa_status
 INSERT INTO visa_status(visa_id,student_id,passport_no,visa_status,issued_date,valid_until) VALUES (1001,3,'Pa12345','Student', '2024-05-25','2027-09-25');
 INSERT INTO visa_status(visa_id,student_id,passport_no,visa_status,issued_date,valid_until) VALUES (1011,2,'Pa13579','Worker', '2022-09-29','2027-12-29');
 INSERT INTO visa_status(visa_id,student_id,passport_no,visa_status,issued_date,valid_until) VALUES (1111,3,'Pa54321','Unknown', '2026-03-20','2026-11-30');

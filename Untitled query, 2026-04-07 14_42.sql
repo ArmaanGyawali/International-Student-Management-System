@@ -73,7 +73,7 @@ UPDATE teacher SET salary = salary + 999 WHERE teacher_id = 52354;
 UPDATE teacher SET salary = salary * 2.25 WHERE Faculty = 'Physics';
 UPDATE students SET grade = 11, address = 'Kathmandu, Nepal' WHERE name = 'Armaan';
 UPDATE teacher SET email = 'sita@gmail.com' WHERE email is NULL;
-#it calculates the everage salary if teachers 
+-- it calculates the everage salary if teachers 
 SELECT AVG(salary) AS "Average_Salary" FROM teacher;
 
 -- I HAVE USED A JOIN METHOD CALLED INNER JOIN 

@@ -2,9 +2,9 @@
 -- creating tables to store info of teachers,
 CREATE TABLE teacher(
     teacher_id INT PRIMARY KEY ,
-    name VARCHAR(20) NOT NULL, # data on name can't be left null there should be something 
+    name VARCHAR(20) NOT NULL, 
     Faculty VARCHAR (20),
-    phone_no VARCHAR(20) UNIQUE, # phone numbers can't be same 
+    phone_no VARCHAR(20) UNIQUE, 
     email VARCHAR(50),
     salary DECIMAL (12,3)
 );
@@ -17,7 +17,7 @@ INSERT INTO teacher(teacher_id,name,Faculty,phone_no,salary) VALUES(52378,'Dr.Pr
 
 
 
-#creating table student
+-- creating table student
 CREATE TABLE students(
     student_id INT AUTO_INCREMENT ,
     name VARCHAR(20) DEFAULT 'attendee', 
@@ -25,7 +25,7 @@ CREATE TABLE students(
     grade INT,
     address VARCHAR(50),
     class_teacher INT,
-    PRIMARY KEY(student_id), #setting student_id as primary key which also means they cant be similar 
+    PRIMARY KEY(student_id), 
     FOREIGN KEY (class_teacher) REFERENCES teacher(teacher_id)
 );
 select * from students;
